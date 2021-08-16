@@ -1,12 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    background: #161618;
+    background: var(--primary);
+    font-family: 'Roboto', sans-serif;
 }
 :root{
-    --primary:#161616;
-    --secondary:#3D3D3D;
-    --light-gray:#AAAAAA;
+    --primary:#101a24;
+    --secondary:#213141;
+    --light-gray:#556f83;
 }
 .header-tag{
     text-align: center;
@@ -29,9 +30,15 @@ form{
     padding: 0.4rem;
 }
 .submit-btn{
+    box-sizing: border-box;
     margin: 1rem;
     padding: 0.4rem;
     cursor: pointer;
+    background: var(--light-gray);
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    font-size: 18px;
 }
 .main-card,.card{
     display: flex;
@@ -39,21 +46,43 @@ form{
     align-items: center;
     flex-direction: column;
 }
-
+.card{
+    max-width: 90%;
+}
 .upper-card{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: var(--secondary);
+    color: white;
     padding: 1rem;
-    
+
+}
+
+.upper-card a{
+    border: 1px solid white;
+    padding: 0.3rem;
+    color:white;
+    text-decoration: none;
 }
 .lower-card{
-    -ms-flex-item-align: start;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--light-gray);
+    width: 100%;
+    max-width: 100%;
 }
 .avatar-img{
     border-radius: 50%;
     width: 40%;
     height: 40%;
+}
+.bio,.location,.followers,.following{
+    width:auto;
+    height: auto;
 }
