@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #161618;
+}
+:root{
+    --primary:#161616;
+    --secondary:#3D3D3D;
+    --light-gray:#AAAAAA;
+}
+.header-tag{
+    text-align: center;
+    color: white;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-in input{
+    padding: 0.4rem;
+}
+.submit-btn{
+    margin: 1rem;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+.main-card,.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upper-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--secondary);
+    padding: 1rem;
+    
+}
+.lower-card{
+    -ms-flex-item-align: start;
+}
+.avatar-img{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+}
